@@ -1,8 +1,0 @@
-### 脚手架的搭建
-```
-npm install -g create-react-app
-create-react-app my-app
-cd my-app/
-npm start
-
-```

@@ -3,25 +3,12 @@ const menuList = [{
         key: '/admin/home'
     },
     {
-        title: '基础组建',
-        key: '/admin/ui',
-        children: [{
-                title: '按钮',
-                key: '/admin/ui/buttons'
-            },
-            {
-                title: '弹框',
-                key: '/admin/ui/modals'
-            },
-            {
-                title: '图片',
-                key: '/admin/ui/gallery'
-            },
-            {
-                title: '轮播图',
-                key: '/admin/ui/carousel'
-            }
-        ]
+        title: '轮播图',
+        key: '/admin/ui/carousel'
+    },
+    {
+        title: '图片画廊',
+        key: '/admin/ui/gallery'
     },
     {
         title: '表单',

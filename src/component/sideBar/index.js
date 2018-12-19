@@ -10,8 +10,6 @@ export default class NavLeft extends  React.Component{
     const menuTreeNode=this.renderMenu(MenuConfig);
     this.setState({ menuTreeNode })
   }
-
-  //为什么要这样写，不在声明周期，this的需要
   renderMenu=(data)=>{
     return data.map((item)=>{
       if(item.children){

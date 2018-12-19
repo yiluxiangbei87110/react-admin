@@ -7,8 +7,6 @@ import Login from './pages/form/login';
 import Register from './pages/form/register';
 import Admin from './pages/admin';
 import Home from './pages/home';
-import Button from './pages/ui/buttons';
-import Model from './pages/ui/modals';
 import Gallery from './pages/ui/gallery';
 import Carousel from './pages/ui/carousel';
 import Table from './pages/table/basicTable';
@@ -20,6 +18,7 @@ import Bar2 from './pages/charts/bar_2';
 import Bar3 from './pages/charts/bar_3';
 import Funnel from './pages/charts/funnel';
 import PictorialBar from './pages/charts/pictorialBar';
+import Thunk from './pages/redux-thunk/thunk/parent_component';
 export default class IRouter extends React.Component{
     render(){
         return (
@@ -34,8 +33,6 @@ export default class IRouter extends React.Component{
                                 <Route path="/admin/form/basicForm" component={BasicForm}/>
                                 <Route path="/admin/form/login" component={Login}/>
                                 <Route path="/admin/form/register" component={Register}/>
-                                <Route path="/admin/ui/buttons" component={Button}/>
-                                <Route path="/admin/ui/modals" component={Model}/>
                                 <Route path="/admin/ui/gallery" component={Gallery}/>
                                 <Route path="/admin/ui/carousel" component={Carousel}/> 
                                 <Route path="/admin/table/basic" component={Table}/> 
@@ -46,7 +43,8 @@ export default class IRouter extends React.Component{
                                 <Route path="/admin/charts/bar" component={Bar} />
                                 <Route path="/admin/charts/bar_2" component={Bar2} />
                                 <Route path="/admin/charts/bar_3" component={Bar3} />
-                                <Route path="/admin/charts/pictorialBar" component={PictorialBar}/>         
+                                <Route path="/admin/charts/pictorialBar" component={PictorialBar}/>
+                                <Route path="/admin/redux/thunk" component={Thunk}/>    
                                 <Route component={NotMatch}></Route>
                             </Switch>
                         </Admin>         

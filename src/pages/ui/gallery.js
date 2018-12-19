@@ -10,14 +10,14 @@ export default class Gallery extends React.Component{
     openGallery = (imgSrc)=>{
         this.setState({
             visible:true,
-            currentImg: '/gallery/'+imgSrc
+            currentImg: '/images/'+imgSrc
         })
     }
   render(){
       const imgs=[
-        ['11.png','12.png','13.png','14.png','15.png'],
-        ['16.png','17.png','18.png','19.png','20.png'],
-        ['21.png','22.png','23.png','24.png','25.png']
+        ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg'],
+        ['6.jpg','7.jpg','8.jpg','9.jpg','10.jpg'],
+        ['11.jpg','12.jpg','13.jpg','14.jpg','15.jpg']
       ]
 
       const imgList=imgs.map(list=> list.map(item=>
@@ -25,7 +25,7 @@ export default class Gallery extends React.Component{
               key={item}
               hoverable
               style={{ width: 240 ,marginBottom:4}}
-              cover={<img   src={'/gallery/'+item}  onClick={()=>this.openGallery(item)} />}
+              cover={<img   src={'/images/'+item}  onClick={()=>this.openGallery(item)} />}
             >
           <Meta
             title="Europe Street beat"
@@ -35,7 +35,7 @@ export default class Gallery extends React.Component{
 
         ))
     return (
-        <div className="card-wrap">
+        <div>
           <Row gutter={10}>
             <Col md={8}>{imgList[0]}</Col>
             <Col md={8}>{imgList[1]}</Col>
